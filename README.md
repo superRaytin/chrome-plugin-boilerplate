@@ -1,5 +1,5 @@
 # chrome-plugin-boilerplate
-Chrome Plugin Boilerplate.
+Simple boilerplate for generating a Google Chrome Plugin.
 
 ## Screenshot
 
