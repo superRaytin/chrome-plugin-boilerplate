@@ -1,2 +1,2 @@
-# commandQ
-Never accidentally quit chrome again.
+# chrome-plugin-boilerplate
+Chrome Plugin Boilerplate.

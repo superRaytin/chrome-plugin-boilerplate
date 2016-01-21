@@ -1,0 +1,45 @@
+{
+  "name": "Chrome Plugin Boilerplate",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Just a Chrome plugin boilerplate.",
+  "author": "Leon Shi",
+  "default_locale": "en",
+  "current_locale": "en",
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ]
+  },
+  "icons": {
+    "64": "images/icon64.jpg",
+    "128": "images/icon128.jpg"
+  },
+  "browser_action": {
+    "default_title": "Chrome Plugin Boilerplate",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "background",
+    "tabs",
+    "notifications"
+  ],
+  "options_page": "options/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "lib/jquery-2.2.0.min.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": [
+    "images/icon64.jpg",
+    "images/icon128.jpg"
+  ]
+}

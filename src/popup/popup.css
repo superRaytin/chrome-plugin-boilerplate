@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #2db7f5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    min-width: 250px;
+}
+
+header, footer {
+    padding: 10px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icon64.jpg");
+    background-size: 100%;
+}
+
+.container {
+    padding: 10px;
+}
+
+.func-list {
+
+}
+
+.func-list li {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.button {
+    background: #2db7f5;
+    padding: 4px 11px;
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+}
